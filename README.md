@@ -23,3 +23,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 All the function and components are dynamic. Table will get changed as the given data will change. We are using different component for Flavanoids Table to make it clean and readable.
 
+![alt text](https://github.com/rohitcoderhun/winedatarepo/blob/master/Capture.PNG?raw=true)
