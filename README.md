@@ -21,6 +21,17 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `Flavanoids Table`
 
-All the function and components are dynamic. Table will get changed as the given data will change. We are using different component for Flavanoids Table to make it clean and readable.
+All the function and components are dynamic. Table will get changed as the given data will change. We are using Flavanoids component for Flavanoids Table to make it clean and readable.
+
+## `Flavanoids table`
 
 ![alt text](https://github.com/rohitcoderhun/winedatarepo/blob/master/Capture.PNG?raw=true)
+
+### `Gamma Table`
+
+Using Gamma component for Gamma table to make it clean and readable.
+
+![alt text](https://github.com/rohitcoderhun/winedatarepo/blob/master/Capture2.PNG?raw=true)
+
+
+
