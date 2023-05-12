@@ -4,6 +4,8 @@ import './Flavanoids.css'
 
 const Gamma=(props)=>{
     const classwise=props.winedata;
+
+    // Doing this to add new value gamma in each object of wine data
     classwise.map((data,ind)=>{
         data.map((ele,i)=>{
             let gamma=(ele.Ash*ele.Hue)/ele.Magnesium;
@@ -11,7 +13,7 @@ const Gamma=(props)=>{
             ele["gamma"]=Number(gamma);
         })
     })
-    console.log(classwise);
+    
 
     return(
         <div style={{display:"grid",justifyContent:"center"}}>
@@ -35,10 +37,11 @@ const Gamma=(props)=>{
           {
             classwise.map((item,ind)=>{
                 let data=[];
+                // storing only gamma value in data array so we have to pass this data array in mean
                 item.map((val,i)=>{
                     data.push(Number(val.gamma));
                 })
-                // console.log("this is data",data)
+                
               return(
                 <td>{mean(data)}</td>
               )
@@ -50,6 +53,7 @@ const Gamma=(props)=>{
           {
             classwise.map((item,ind)=>{
                 let data=[];
+                // storing only gamma value in data array so we have to pass this data array in median
                 item.map((val,i)=>{
                     data.push(Number(val.gamma));
                 })
@@ -64,6 +68,7 @@ const Gamma=(props)=>{
           {
             classwise.map((item,ind)=>{
                 let data=[];
+                // storing only gamma value in data array so we have to pass this data array in mode
                 item.map((val,i)=>{
                     data.push(Number(val.gamma));
                 })

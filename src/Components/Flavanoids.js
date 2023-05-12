@@ -27,10 +27,11 @@ const Flavanoids=(props)=>{
           {
             classwise.map((item,ind)=>{
                 let data=[];
+                // storing only flavanoids value in data array so we have to pass this data array in mean
                 item.map((val,i)=>{
                     data.push(Number(val.Flavanoids));
                 })
-                // console.log("this is data",data)
+                
               return(
                 <td>{mean(data)}</td>
               )
@@ -42,6 +43,7 @@ const Flavanoids=(props)=>{
           {
             classwise.map((item,ind)=>{
                 let data=[];
+                // storing only flavanoids value in data array so we have to pass this data array in median
                 item.map((val,i)=>{
                     data.push(Number(val.Flavanoids));
                 })
@@ -56,6 +58,7 @@ const Flavanoids=(props)=>{
           {
             classwise.map((item,ind)=>{
                 let data=[];
+                // storing only flavanoids value in data array so we have to pass this data array in mode
                 item.map((val,i)=>{
                     data.push(Number(val.Flavanoids));
                 })

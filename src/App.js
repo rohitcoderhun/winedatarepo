@@ -8,9 +8,10 @@ import Gamma from "./Components/Gamma";
 
 
 function App() {
-  console.log(winedata);
+  
 
   const [classwise,setClasswise]=useState([]);
+  // Below function is for dividing the winedata classwise
   const classwisefuntion=()=>{
     let i=0;
     let flag=true;
@@ -32,10 +33,6 @@ function App() {
       }
   }
   classwisefuntion();
-  console.log("this  is classwise data",classwise);
-
-
-
   return (
     <div>
       
@@ -43,8 +40,10 @@ function App() {
         <p>Tables with Calculated Data</p>
       </div>
       <p style={{textAlign:"center",fontSize:"26px",margin:"16px"}}>Flavanoids Table</p>
+      {/* Component to render the flavanoids table*/ }
       <Flavanoids winedata={classwise} />
       <p style={{textAlign:"center",fontSize:"26px",margin:"16px"}}>Gamma Table</p>
+      {/* Component to render the gamma table*/ }
       <Gamma winedata={classwise} />
 
 
